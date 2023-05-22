@@ -1,0 +1,90 @@
+body {
+  font-family: Philosopher;
+  margin: 0;
+  padding: 20px 20px 0;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav img {
+  width: 130px;
+}
+
+p, figcaption {
+  font-family: 'Libre Franklin';
+  font-weight: 200;
+}
+
+p {
+  font-size: 1.05em;
+  letter-spacing: .2px;
+  line-height: 1.4em;
+}
+
+figure {
+  margin: 0;
+  /* margin: auto; */
+}
+
+figure img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+figure figcaption {
+  font-size: 12px;
+  margin: auto;
+  padding: 10px;
+}
+
+figure img, figure figcaption {
+  max-width: 890px;
+}
+
+h2 {
+ font-size: 20px; 
+ letter-spacing: -1px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  margin-left: -20px;
+  margin-top: 60px;
+  width: 100vw;
+}
+
+.gallery img {
+  flex-basis: 10%;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+/* .gallery div:nth-child(n) { */
+  /* flex-basis: 10%; */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("/assets/slide-1.jpeg"); */
+  /* height: auto;
+  width: 50px; */
+/* } */
+
+/* .gallery div:nth-child(n+1) { */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("/assets/slide-2.jpeg"); */
+  /* height: auto;
+  width: 50px; */
+/* } */
+
+@media screen and (min-width: 728px) {
+  nav img {
+    width: 220px;
+  }
+}
