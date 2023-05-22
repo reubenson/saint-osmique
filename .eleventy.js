@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
       input: "src",
       layouts: "_layouts",
       output: "docs"
-    }
+    },
+    pathPrefix: "/saint-osmique/" // temporary config while serving from reubenson.com
   }
 };
