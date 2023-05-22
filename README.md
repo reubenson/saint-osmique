@@ -6,6 +6,14 @@ This project is built with Eleventy (compiled to /docs), and hosted via GitHub p
 
 In keeping with Github Pages reliance on Jekyll, static site pages are served from /docs.
 
+## TO DO
+- determine whether old nav bar needs to be retained
+- determine appropriate email service to replace Squarespace
+  - e.g. Mailchimp free tier (https://mailchimp.com/features/custom-forms/
+https://mailchimp.com/features/custom-forms/)
+- obtain domain host from Squarespace and configure host to point to github
+- transfer [github project](https://github.com/reubenson/saint-osmique) to David
+
 ## Getting Started
 To get the app serving locally at localhost:8080:
 ```bash
