@@ -5,22 +5,19 @@ body {
 }
 
 nav {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
-nav img {
-  width: 130px;
-}
-
-p, figcaption {
-  font-family: 'Libre Franklin';
-  font-weight: 200;
+nav .logo {
+  width: 120px;
 }
 
 p {
-  font-size: 1.05em;
+  font-family: 'Libre Franklin';
+  font-size: 1.0em;
   letter-spacing: .2px;
-  line-height: 1.4em;
+  font-weight: 200;
+  line-height: 1.45em;
 }
 
 figure {
@@ -34,10 +31,13 @@ figure img {
   width: 100%;
 }
 
-figure figcaption {
-  font-size: 12px;
-  margin: auto;
-  padding: 10px;
+.lede-caption {
+  margin: 80px auto;
+  /* padding: 10px; */
+}
+
+.lede-caption p {
+  font-size: 10.5px;
 }
 
 figure img, figure figcaption {
@@ -49,20 +49,34 @@ h2 {
  letter-spacing: -1px;
 }
 
+.lede {
+  margin-top: 90px;
+}
+
+.content {
+  margin-top: 90px;
+}
+
 .gallery {
   display: flex;
   flex-direction: row;
-  height: 100px;
-  margin-left: -20px;
+  height: 170px;
+  margin-left: calc(-20px);
   margin-top: 60px;
   overflow: hidden;
   width: 100vw;
+  justify-content: center;
 }
 
 .gallery img {
   flex-basis: 10%;
   flex-grow: 1;
   object-fit: cover;
+  min-width: 90px;
+}
+
+a {
+  color: black;
 }
 
 /* .gallery div:nth-child(n) { */

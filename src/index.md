@@ -13,4 +13,6 @@ You will then be given a week to continue testing the scents “blindly” after
 
 Price: $300 — includes both meetings and 1st round of search
 
+<br /><br />
+
 *Somewhere quiet and familiar is to be preferred.

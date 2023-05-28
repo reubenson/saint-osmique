@@ -27,19 +27,21 @@ title: Saint Osmique
   <body>
     <nav>
       <a href="/">
-        <img src="./assets/logo_full.png" alt="Saint Osmique"/>
+        <img src="./assets/logo_full.png" alt="Saint Osmique" class="logo"/>
       </a>
       {# Saint~Osmique #}
     </nav>
-    <figure>
+    <figure class="lede">
       <img src="./assets/lede.jpg" alt="Premium fragrance concierge and personal shopper services in New York City"/>
-      <figcaption>
-        Abraham Brueghel, <italic>Fruit and flowers</italic>, oil on canvas, ca. 1675
-      </figcaption>
     </figure>
-
-    {{ content | safe }}
-    {# </div> #}
+    <section class="content">
+      {{ content | safe }}
+    </section>
+    <div class="lede-caption">
+      <p>
+        Top image: Abraham Brueghel, <italic>Fruit and flowers</italic>, oil on canvas, ca. 1675
+      </p>
+    </div>
     <div class="gallery">
       {# holding place for background images #}
       <img src="./assets/slide-1.jpeg"></img>
