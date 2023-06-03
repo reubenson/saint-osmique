@@ -1,37 +1,12 @@
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <meta name="description" content="Premium fragrance concierge and personal shopper services in New York City">
-    <meta name="keywords" content="Saint Osmique, David Dinsfriend, fragrance, NYC">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="stylesheet" href="../assets/bundle.css">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Philosopher|Libre Franklin:100,200,300">
-    <!-- Google tag (gtag.js) -->
-    
-    </script>
-  </head>
-  <body class="contact">
-    <nav>
-      <a href="/">
-        <img src="../assets/logo_full.png" alt="Saint Osmique" class="logo"/>
-      </a>
-    </nav>
-    <figure class="lede">
-      <img src="../assets/bronze-statue.jpeg" alt="broze statuette announcing sign up form"/>
-    </figure>
-    <section class="content">
-      <!-- Begin Mailchimp Signup Form -->
+<!-- Begin Mailchimp Signup Form -->
 <!-- https://us17.admin.mailchimp.com/audience/forms/embedded-form/editor?id=1358751 -->
 <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css"> -->
 <!-- <h2>Contact Us</h2> -->
-<h2>Contact Us</h2>
-<p>For appointments and other inquiries:</p>
-<p>david@saint-osmique.com – or use form below</p>
+## Contact Us
+For appointments and other inquiries:
+
+david@saint-osmique.com – or use form below
+
 <div id="mc_embed_signup">
   <form action="https://gmail.us17.list-manage.com/subscribe/post?u=b7633fa6a9f5102615176078a&amp;id=a831f2671d&amp;f_id=00785de0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
@@ -75,16 +50,3 @@
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='MSG';ftypes[5]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
-
-
-      <div class="lede-caption">
-        <p>
-          Image: Bronze statuette of a solar deity
-          (the object in their left hand may be an incense box)
-          Etruscan
-          3rd-2nd century BCE
-        </p>
-      </div>
-    </section>
-  </body>
-</html>

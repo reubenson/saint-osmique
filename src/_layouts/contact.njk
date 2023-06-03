@@ -11,9 +11,9 @@ title: Contact Us
     <meta name="description" content="Premium fragrance concierge and personal shopper services in New York City">
     <meta name="keywords" content="Saint Osmique, David Dinsfriend, fragrance, NYC">
     <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="stylesheet" href="/bundle.css">
+    <link rel="stylesheet" href="../assets/bundle.css">
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Merriweather|Libre Franklin">
+      href="https://fonts.googleapis.com/css?family=Philosopher|Libre Franklin:100,200,300">
     <!-- Google tag (gtag.js) -->
     {# <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120208217-1"></script>
     <script>
@@ -24,12 +24,26 @@ title: Contact Us
       gtag('config', 'UA-120208217-1'); #}
     </script>
   </head>
-  <body>
+  <body class="contact">
     <nav>
-      Saint~Osmique
+      <a href="/">
+        <img src="../assets/logo_full.png" alt="Saint Osmique" class="logo"/>
+      </a>
     </nav>
+    <figure class="lede">
+      <img src="../assets/bronze-statue.jpeg" alt="broze statuette announcing sign up form"/>
+    </figure>
     <section class="content">
-      {{ content | safe }}
+      {% renderFile "./src/includes/contact.md" %}
+
+      <div class="lede-caption">
+        <p>
+          Image: Bronze statuette of a solar deity
+          (the object in their left hand may be an incense box)
+          Etruscan
+          3rd-2nd century BCE
+        </p>
+      </div>
     </section>
   </body>
 </html>
