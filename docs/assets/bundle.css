@@ -19,13 +19,20 @@ nav .logo {
   width: 150px;
 }
 
-nav .contact-link {
+nav .nav-links {
   font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
   position: absolute;
   right: 20px;
-  top: 30px;
+  top: 24px;
+}
+
+.nav-links a {
+  border-bottom: solid black 1px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  
 }
 
 p {
@@ -159,7 +166,7 @@ button a {
     width: 225px;
   }
 
-  nav .contact-link {
+  nav .nav-link {
     left: 20px;
     right: auto;
   }

@@ -10,7 +10,7 @@ title: Contact Us
     <title>{{ title }}</title>
     <meta name="description" content="Premium fragrance concierge and personal shopper services in New York City">
     <meta name="keywords" content="Saint Osmique, David Dinsfriend, fragrance, NYC">
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
     <link rel="stylesheet" href="../assets/bundle.css">
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Philosopher|Libre Franklin:100,200,300">
@@ -29,21 +29,30 @@ title: Contact Us
       <a href="/">
         <img src="../assets/logo_full.png" alt="Saint Osmique" class="logo"/>
       </a>
+      {# TODO: update href after domain host acquisition #}
+      <div class="nav-links">
+        {%- if title === 'About' -%}
+          <a href="/saint-osmique/contact/" class="nav-link">Contact</a>
+        {%- elif title === 'Contact' -%}
+          <a href="/saint-osmique/about/" class="nav-link">About</a>
+        {%- endif -%}
+      </div>
     </nav>
+    {%- if ledeImageFilename -%}
     <figure class="lede">
-      <img src="../assets/bronze-statue.jpeg" alt="broze statuette announcing sign up form"/>
+      <img src="../assets/{{ ledeImageFilename}}" alt="broze statuette announcing sign up form"/>
     </figure>
+    {%- endif -%}
     <section class="content">
-      {% renderFile "./src/includes/contact.md" %}
+      {{ content | safe }}
 
+      {%- if ledeImageCaption -%}
       <div class="lede-caption">
         <p>
-          Image: Bronze statuette of a solar deity
-          (the object in their left hand may be an incense box)
-          Etruscan
-          3rd-2nd century BCE
+          Image: {{ ledeImageCaption }}
         </p>
       </div>
+      {%- endif -%}
     </section>
   </body>
 </html>
