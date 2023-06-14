@@ -15,7 +15,7 @@ My family's artistic background fostered an appreciation for beauty, aesthetics,
 In parallel, my family's psychological expertise provided me with invaluable insights into the intricate workings of the human mind. Understanding the profound connection between scent and emotion, I delved deep into the psychological impact of fragrances, unearthing their ability to evoke and influence moods and memories. This knowledge –stemming from analysis, empathy and empirical observation– enables me to understand which scents resonate with my clients on a profound level, tapping into their unique history and experience.
 
 <figure>
-  <img src="/saint-osmique/assets/david-1.jpeg"> 
+  <img src="/assets/david-1.jpeg"> 
   <figcaption>David, circa 1989</figcaption>
 </figure>
 
