@@ -1,7 +1,7 @@
 ---
 layout: index.njk
 title: Reuben Son
-ledeText: Premium fragrance concierge and personal shopper services in New York City
+ledeText: Premium fragrance concierge and personal shopper services in Paris
 ---
 
 ## Why Saint~Osmique?
