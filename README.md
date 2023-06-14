@@ -8,12 +8,15 @@ In keeping with Github Pages reliance on Jekyll, static site pages are served fr
 
 ## TO DO
 - [ ] determine final set of fonts
-- [ ] confirm whether okay to remove hamburger menu and leave contact link in nav
+- [x] confirm whether okay to remove hamburger menu and leave contact link in nav
 - [ ] determine appropriate email service to replace Squarespace
   - e.g. Mailchimp free tier (https://mailchimp.com/features/custom-forms/
 https://mailchimp.com/features/custom-forms/)
 - [ ] obtain domain host from Squarespace and configure host to point to github
 - [ ] transfer [github project](https://github.com/reubenson/saint-osmique) to David
+- [ ] Determine whether google workspace subscription is needed
+- [ ] Finalize all layout styling
+- [ ] Switch over domain registration (before June 27)
 
 ## Getting Started
 To get the app serving locally at localhost:8080:

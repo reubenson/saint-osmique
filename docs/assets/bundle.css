@@ -1,7 +1,13 @@
+/* the following styles are shared on the index and non-index pages (e.g. about, contact) */
+/* index-only styles are specified with .index */
+/* non-index styles are specified with .page */
+
+@font-face {
+  font-family: 'HWT Aetna';
+  src: url('/saint-osmique/assets/hwt-aetna-extra-condensed.woff2');
+}
+
 body {
-  /* font-family: Philosopher; */
-  /* font-family: Libre Franklin;
-  letter-spacing: 1px; */
   margin: 0;
   padding: 0 20px 0;
 }
@@ -15,24 +21,28 @@ nav {
   padding: 20px 0 0;
 }
 
-nav .logo {
-  width: 150px;
+nav a {
+  text-decoration: none;
+}
+
+nav h1 {
+  font-size: 30px;
+  margin-top: 0;
 }
 
 nav .nav-links {
   font-size: 14px;
   position: absolute;
   right: 20px;
-  top: 24px;
+  top: 27px;
 }
 
 .nav-links a {
   border-bottom: solid black 1px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   margin-left: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  
 }
 
 p {
@@ -59,39 +69,17 @@ figure img {
 }
 
 figure img, figure figcaption {
-  max-width: 910px;
+  max-width: 960px;
+}
+
+h1, h2 {
+  font-family: 'HWT Aetna';
+  letter-spacing: 0;
+  font-weight: 200;
 }
 
 h2 {
-  font-family: Philosopher;
-  font-size: 25px; 
-  letter-spacing: -1px;
-}
-
-.lede {
-  margin-top: 60px;
-}
-
-.content {
-  margin: 90px auto 220px;
-}
-
-.gallery {
-  display: flex;
-  flex-direction: row;
-  height: 170px;
-  margin-left: calc(-20px);
-  margin-top: 60px;
-  overflow: hidden;
-  width: 100vw;
-  justify-content: center;
-}
-
-.gallery img {
-  flex-basis: 10%;
-  flex-grow: 1;
-  object-fit: cover;
-  min-width: 90px;
+  font-size: 22px; 
 }
 
 a {
@@ -122,54 +110,33 @@ button:hover a {
 
 button a {
   letter-spacing: 2px;;
-  /* font-weight: 100; */
   letter-spacing: 2px;
   font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-/* .gallery div:nth-child(n) { */
-  /* flex-basis: 10%; */
-  /* background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-image: url("/assets/slide-1.jpeg"); */
-  /* height: auto;
-  width: 50px; */
-/* } */
-
-/* .gallery div:nth-child(n+1) { */
-  /* background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-image: url("/assets/slide-2.jpeg"); */
-  /* height: auto;
-  width: 50px; */
-/* } */
-
-/* apply desktop-width styles below */
-
-/* @media screen and (min-width: 728px) {
-  nav img {
-    width: 220px;
-  }
-} */
-
 @media screen and (min-width: 1024px) {
   nav {
     text-align: center;
   }
 
-  nav .logo {
-    margin: auto;
-    width: 225px;
+  nav h1 {
+    font-size: 48px;
   }
 
   nav .nav-link {
     left: 20px;
     right: auto;
   }
+
+  .nav-links a {
+    margin-left: 20px;
+  }
+
+  h2 {
+    font-size: 25px;
+  };
 
   .content {
     margin-bottom: 60px;
@@ -181,23 +148,162 @@ button a {
     font-size: 12px;
     text-align: center;
   }
+}
 
-  .gallery {
+/* styles for index page */
+.index .lede {
+  height: calc(.76 * (100vw - 40px));
+  margin-top: 120px;
+  position: relative;
+}
+
+.index .lede img {
+  border-radius: 20px;
+}
+
+.index .lede figcaption {
+  bottom: 0;
+  color: white;
+  display: block;
+  font-family: 'HWT Aetna', Georgia;
+  font-size: 20px;
+  font-weight: 200;
+  height: 110px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  min-width: 230px;
+  right: 0;
+  top: 0;
+  width: 50%;
+  text-align: center;
+}
+
+.index .content {
+  margin: 30px auto 120px;
+  max-width: 800px;
+}
+
+.index .gallery {
+  display: flex;
+  flex-direction: row;
+  height: 170px;
+  margin-left: calc(-20px);
+  margin-top: 60px;
+  overflow: hidden;
+  width: 100vw;
+  justify-content: center;
+}
+
+.index .gallery img {
+  flex-basis: 10%;
+  flex-grow: 1;
+  object-fit: cover;
+  min-width: 90px;
+}
+
+@media screen and (min-width: 1024px) {
+  .index .lede {
+    margin-top: 60px;
+    height: 736px;
+  }
+
+  .index .lede figcaption {
+    font-size: 48px;
+    height: 290px;
+    width: 40%;
+    line-height: 100px;
+  }
+
+  .index h2 {
+    font-size: 30px;
+  }
+
+  .index .content {
+    margin-top: 60px;
+    max-width: 760px;
+  }
+
+  .index .content p {
+    font-size: 20px;
+  }
+
+  .index .gallery {
     margin: auto auto 20px;
-    height: 200px;
+    height: 400px;
     width: calc(100vw - 40px);
+  }
+
+  .index .gallery img {
+    min-width: 190px;
   }
 }
   
-/* contact page styles below */
-.contact .lede {
+/* non-index page styles below */
+.page .lede {
   margin: 40px auto auto;
   max-width: 280px;
   width: 100%;
 }
 
-.contact .content {
-  font-size: 14px;
+.page .content {
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.page .content figure {
+  margin: 40px auto;
+}
+
+.page .content figure img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+.page .content figcaption {
+  font-size: 12px;
+  margin: 10px auto 0;
+  text-align: center;
+  width: 300px;
+}
+
+.page h2 {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .page .container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    max-width: 1400px;
+  }
+
+  .page .lede {
+    margin: 0;
+    max-width: 400px;
+    width: 400px;
+  }
+
+  .page .lede img {
+    width: 400px;
+  }
+
+  .page .content {
+    margin-top: 0;
+    width: 700px;
+  }
+
+  .page h2 {
+    font-size: 28px;
+  }
+
+  .page .container > * {
+    padding: 10px;
+  }
 }
 
 /* Overwrite Mailchimp sign-up form styles */

@@ -1,5 +1,7 @@
 ---
 title: Saint Osmique
+ledeImage: 
+ledeText: Premium fragrance concierge and personal shopper services in New York City
 ---
 
 <!doctype html>
@@ -13,7 +15,7 @@ title: Saint Osmique
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <link rel="stylesheet" href="./assets/bundle.css">
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Philosopher|Libre Franklin:100,200,300">
+      href="https://fonts.googleapis.com/css?family=Libre Franklin:100,200,300">
     <!-- Google tag (gtag.js) -->
     {# <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120208217-1"></script>
     <script>
@@ -24,10 +26,10 @@ title: Saint Osmique
       gtag('config', 'UA-120208217-1'); #}
     </script>
   </head>
-  <body>
+  <body class="index">
     <nav>
       <a href="/">
-        <img src="./assets/logo_full.png" alt="Saint Osmique" class="logo"/>
+        <h1>Saint~Osmique</h1>
       </a>
       {# TODO: update href after domain host acquisition #}
       <div class="nav-links">
@@ -36,13 +38,15 @@ title: Saint Osmique
       </div>
     </nav>
     <figure class="lede">
-      <img src="./assets/lede.jpg" alt="Premium fragrance concierge and personal shopper services in New York City"/>
+      {# <img src="./assets/lede.jpg" alt="Premium fragrance concierge and personal shopper services in New York City"/> #}
+      <img src="./assets/brueghel.jpeg" alt="Premium fragrance concierge and personal shopper services in New York City"/>
+      <figcaption>{{ ledeText | safe }}</figcaption>
     </figure>
     <section class="content">
       {{ content | safe }}
     </section>
     <button>
-      <a href="/contact">Book Now</a>
+      <a href="/saint-osmique/contact/">Book Now</a>
     </button>
     <div class="lede-caption">
       <p>
@@ -51,7 +55,6 @@ title: Saint Osmique
     </div>
       {# {% renderFile "./src/includes/contact.md" %} #}
     <div class="gallery">
-      {# holding place for background images #}
       <img src="./assets/slide-1.jpeg"></img>
       <img src="./assets/slide-2.jpeg"></img>
       <img src="./assets/slide-1.jpeg"></img>
