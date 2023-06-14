@@ -101,7 +101,7 @@ button, input.button {
 
 button:hover, input.button:hover {
   background-color: black !important;
-  /* color: white; */
+  color: white;
 }
 
 button:hover a {
