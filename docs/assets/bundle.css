@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  padding: 0 20px 0;
+  padding: 0 30px 0;
 }
 
 body, button, input.button {
@@ -166,7 +166,7 @@ button a {
   color: white;
   display: block;
   font-family: 'HWT Aetna', Georgia;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 200;
   height: 110px;
   letter-spacing: 1px;
@@ -174,7 +174,7 @@ button a {
   position: absolute;
   left: 0;
   margin: auto;
-  min-width: 230px;
+  min-width: 270px;
   right: 0;
   top: 0;
   width: 50%;
