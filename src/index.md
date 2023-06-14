@@ -1,6 +1,6 @@
 ---
 layout: index.njk
-title: Reuben Son
+title: Saint Osmique
 ledeText: Premium fragrance concierge and personal shopper services in New York City
 ---
 
