@@ -7,7 +7,7 @@ This project is built with Eleventy (compiled to /docs), and hosted via GitHub p
 In keeping with Github Pages reliance on Jekyll, static site pages are served from /docs.
 
 ## TO DO
-- [ ] determine final set of fonts
+- [x] determine final set of fonts
 - [x] confirm whether okay to remove hamburger menu and leave contact link in nav
 - [ ] determine appropriate email service to replace Squarespace
   - e.g. Mailchimp free tier (https://mailchimp.com/features/custom-forms/

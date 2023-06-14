@@ -11,6 +11,6 @@ module.exports = function(eleventyConfig) {
       layouts: "_layouts",
       output: "docs"
     },
-    pathPrefix: "/saint-osmique/" // temporary config while serving from reubenson.com
+    // pathPrefix: "/saint-osmique/" // temporary config while serving from reubenson.com
   }
 };
