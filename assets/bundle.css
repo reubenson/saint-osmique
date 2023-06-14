@@ -1,0 +1,361 @@
+/* the following styles are shared on the index and non-index pages (e.g. about, contact) */
+/* index-only styles are specified with .index */
+/* non-index styles are specified with .page */
+
+@font-face {
+  font-family: 'HWT Aetna';
+  src: url('/saint-osmique/assets/hwt-aetna-extra-condensed.woff2');
+}
+
+body {
+  margin: 0;
+  padding: 0 20px 0;
+}
+
+body, button, input.button {
+  font-family: Libre Franklin, arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+nav {
+  padding: 20px 0 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav h1 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+nav .nav-links {
+  font-size: 14px;
+  position: absolute;
+  right: 20px;
+  top: 27px;
+}
+
+.nav-links a {
+  border-bottom: solid black 1px;
+  padding-bottom: 2px;
+  margin-left: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Libre Franklin';
+  font-size: 1.0em;
+  letter-spacing: .2px;
+  font-weight: 200;
+  line-height: 1.45em;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.lede-caption {
+  margin: 80px auto;
+  font-size: 10.5px;
+}
+
+figure img, figure figcaption {
+  max-width: 960px;
+}
+
+h1, h2 {
+  font-family: 'HWT Aetna';
+  letter-spacing: 0;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 22px; 
+}
+
+a {
+  color: black;
+}
+
+button, input.button {
+  background: none;
+  border-radius: 0;
+  border-color: black;
+  border-width: 2px;
+  color: black;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, input.button:hover {
+  background-color: black !important;
+  /* color: white; */
+}
+
+button:hover a {
+  color: white;
+}
+
+button a {
+  letter-spacing: 2px;;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    text-align: center;
+  }
+
+  nav h1 {
+    font-size: 48px;
+  }
+
+  nav .nav-link {
+    left: 20px;
+    right: auto;
+  }
+
+  .nav-links a {
+    margin-left: 20px;
+  }
+
+  h2 {
+    font-size: 25px;
+  };
+
+  .content {
+    margin-bottom: 60px;
+    max-width: 728px;
+    font-size: 20px;
+  }
+
+  .lede-caption {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* styles for index page */
+.index .lede {
+  height: calc(.76 * (100vw - 40px));
+  margin-top: 120px;
+  position: relative;
+}
+
+.index .lede img {
+  border-radius: 20px;
+}
+
+.index .lede figcaption {
+  bottom: 0;
+  color: white;
+  display: block;
+  font-family: 'HWT Aetna', Georgia;
+  font-size: 20px;
+  font-weight: 200;
+  height: 110px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  min-width: 230px;
+  right: 0;
+  top: 0;
+  width: 50%;
+  text-align: center;
+}
+
+.index .content {
+  margin: 30px auto 120px;
+  max-width: 800px;
+}
+
+.index .gallery {
+  display: flex;
+  flex-direction: row;
+  height: 170px;
+  margin-left: calc(-20px);
+  margin-top: 60px;
+  overflow: hidden;
+  width: 100vw;
+  justify-content: center;
+}
+
+.index .gallery img {
+  flex-basis: 10%;
+  flex-grow: 1;
+  object-fit: cover;
+  min-width: 90px;
+}
+
+@media screen and (min-width: 1024px) {
+  .index .lede {
+    margin-top: 60px;
+    height: 736px;
+  }
+
+  .index .lede figcaption {
+    font-size: 48px;
+    height: 290px;
+    width: 40%;
+    line-height: 100px;
+  }
+
+  .index h2 {
+    font-size: 30px;
+  }
+
+  .index .content {
+    margin-top: 60px;
+    max-width: 760px;
+  }
+
+  .index .content p {
+    font-size: 20px;
+  }
+
+  .index .gallery {
+    margin: auto auto 20px;
+    height: 400px;
+    width: calc(100vw - 40px);
+  }
+
+  .index .gallery img {
+    min-width: 190px;
+  }
+}
+  
+/* non-index page styles below */
+.page .lede {
+  margin: 40px auto auto;
+  max-width: 280px;
+  width: 100%;
+}
+
+.page .content {
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.page .content figure {
+  margin: 40px auto;
+}
+
+.page .content figure img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+.page .content figcaption {
+  font-size: 12px;
+  margin: 10px auto 0;
+  text-align: center;
+  width: 300px;
+}
+
+.page h2 {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .page .container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    max-width: 1400px;
+  }
+
+  .page .lede {
+    margin: 0;
+    max-width: 400px;
+    width: 400px;
+  }
+
+  .page .lede img {
+    width: 400px;
+  }
+
+  .page .content {
+    margin-top: 0;
+    width: 700px;
+  }
+
+  .page h2 {
+    font-size: 28px;
+  }
+
+  .page .container > * {
+    padding: 10px;
+  }
+}
+
+/* Overwrite Mailchimp sign-up form styles */
+form label {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  background-color: #fafafa;
+  box-sizing: border-box;
+  border-radius: 0;
+  border-width: 1px;
+  display: block;
+  font-size: 16px;
+  height: 45px;
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+form textarea {
+  height: 120px;
+}
+
+.form-names {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-names .mc-field-group {
+  flex-basis: 48%;
+  /* flex-grow: 1; */
+  margin: 0;
+}
+
+.mc-field-group {
+  margin: 20px auto;
+}
+
+#mc-embedded-subscribe {
+  background: none;
+  height: 70px;
+  letter-spacing: 3px;
+  padding: 20px;
+  width: auto;
+}
+
+#mc_embed_signup form {
+  margin: 20px auto auto;
+}
